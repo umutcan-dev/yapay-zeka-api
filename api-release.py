@@ -131,7 +131,6 @@ class NeYedim(Resource):
             'sonuc': fileList[id]
             }
         }
-f
         
         print(data)
         return {'data' : data}, 200
