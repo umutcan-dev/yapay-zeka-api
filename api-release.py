@@ -117,7 +117,8 @@ class NeYedim(Resource):
         print(prediction_max)
 
         id = -1
-        for i in csvFile:
+	sizeOfDemoList = len(fileList)
+        for i in range(sizeOfDemoList):
          if(prediction[0][i]==prediction_max):
            id=i
         print(id)
