@@ -85,7 +85,7 @@ class NeYedim(Resource):
         print(data)
         return {'data' : data}, 200
       
-      //post işlemi
+      #post işlemi
       def post(self):
         name = request.form['name']
         encoded = request.form['image']
@@ -136,10 +136,10 @@ f
         print(data)
         return {'data' : data}, 200
 
-// Add URL endpoints
+# Add URL endpoints
 api.add_resource(NeYedim, '/neyedinanaliz')
 
 if __name__ == '__main__':
-//     app.run(host="0.0.0.0", port=5000)
+#     app.run(host="0.0.0.0", port=5000)
     app.run()
 
